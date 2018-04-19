@@ -1,0 +1,25 @@
+<link href='{{ site.url }}/images/fav.png' rel='shortcut icon'>
+<link href='{{ site.url }}/stylesheets/style.css' rel='stylesheet' type='text/css' />
+<link href='{{ site.url }}/stylesheets/syntax.css' rel='stylesheet' type='text/css' />
+<link href="{{ site.url }}/stylesheets/semantic/progress.min.css" rel="stylesheet">
+
+<script src="{{ site.url }}/javascript/jquery.min.js"></script>
+<script src="{{ site.url }}/javascript/semantic/progress.min.js"></script>
+
+<meta content='width=device-width, initial-scale=1.0, user-scalable=no' name='viewport'>
+<meta content='text/html; charset=utf-8' http-equiv='content-type' />
+<!-- - -->
+
+{% if site.google_analytics %}
+<script>
+  (function (i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+      (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date(); a = s.createElement(o),
+      m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+  })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+  ga('create', '{{ site.google_analytics }}', 'auto');
+  ga('send', 'pageview');
+
+</script> {% endif %}

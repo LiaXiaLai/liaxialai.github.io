@@ -1,0 +1,17 @@
+# ----------- CONFIGURABLE START -----------
+title:            "刘下来"
+description:      
+url:              http://liaxialai.github.io # Site url, without a slash at the end.
+signoff:          "Liuxialai" # Your name
+google_analytics: UA-116383307-1# Set tracking, remove from /javascripts/basic.js if unwanted.
+
+links:
+  - name:         文章
+    url:          /
+    external:     false
+# ------------ CONFIGURABLE END ------------
+
+permalink:        /posts/:title
+defaults:
+  - values:
+      layout: "default"
